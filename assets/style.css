@@ -1,0 +1,64 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 20px;
+    background-color: #F7F7F7;
+    background-image:url('valkyrie_intro_page.jpg') ;
+    background-size:cover;
+
+}
+.header {
+    background-color: #222222;
+    height: 300px;
+    padding: 16px 0 0 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;  */
+}
+.header-title {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin: -100px; 
+}
+.header-description {
+    color:#CFCFCF;
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 110px auto; 
+}
+.header-image {
+    font-size: 12px;
+    text-align: left;
+    height: 75%;
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 30px
+}
+.client-image {
+    font-size: 12px;
+    text-align: right;
+    height: 60%;
+    width: 20%;
+    margin-top:30px;
+    margin-left: 1250px
+}
+.textarea {
+    font-size: 20px;
+    font-weight: lighter;
+    background-color:#222222;
+    background-size: cover;
+    max-width: 375px;
+    font-size: 30px;
+    color:#FFFFFF;
+    margin-left: 0px;
+    margin-top: 25px;
+    white-space: pre-line;
+    /* background-color: transparent; */
+}
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
