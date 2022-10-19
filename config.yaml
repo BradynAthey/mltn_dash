@@ -1,0 +1,6 @@
+# IP address to listen on, if running and accessing locally try 127.0.0.1
+HOST_ADDRESS : '127.0.0.1'
+# Define the port number to use as string
+PORT_NUMBER : '8050'
+# Data path, use / if on mark1 or ~/ if on laptop
+DATA_PATH_PREFIX : '~/'
