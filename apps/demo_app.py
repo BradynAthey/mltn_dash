@@ -1,25 +1,23 @@
 import base64
 import datetime as dt
+import logging
 from io import BytesIO
 
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_table
+import matplotlib
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objs as go
-from dash.dependencies import Input, Output, State
-import logging
-
 import plotly.io as pio
-
-from utils import mpl_fig_to_uri
+from dash.dependencies import Input, Output, State
 from mltn import generate_random_timeseries
 
-import matplotlib
+from utils import mpl_fig_to_uri
 
 matplotlib.use("agg")
 
@@ -68,7 +66,7 @@ data_store = html.Div(id="data-store", style={"display": "none"})
 # """""""""""""""""" Dash Components (to be arranged in the layout) """""""""""""""""""
 
 # """""""""""""""""""""""""""""""""" Input Components """"""""""""""""""""""""""""""""""
-# conversation dropdown
+# dropdown input
 dropdown_options_dict = {
     "Option A": "option_a",
     "Option B": "option_b",

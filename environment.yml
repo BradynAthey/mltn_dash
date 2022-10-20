@@ -11,3 +11,4 @@ dependencies:
 - pandas
 - matplotlib
 - joblib
+- dash_cytoscape

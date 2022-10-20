@@ -6,7 +6,7 @@ setup(
     description="MLTN: Machine Learning TransitioN toolkit",
     author="",
     packages=find_packages("src"),
-    package_dir={'': 'src'},
+    package_dir={"": "src"},
     include_package_data=True,
     install_requires=[
         "pytest",
@@ -15,6 +15,6 @@ setup(
         "jupyter",
         "matplotlib",
         "joblib",
-
+        "dash_cytoscape",
     ],
 )

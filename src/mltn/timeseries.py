@@ -1,12 +1,14 @@
-import pandas as pd
-import numpy as np
 import time
-import joblib
 
-SEED_MAP = {'option_a': 0, 'option_b': 1, 'option_c': 2}
+import joblib
+import numpy as np
+import pandas as pd
+
+SEED_MAP = {"option_a": 0, "option_b": 1, "option_c": 2}
 
 # in-memory cache for storing results of expensive computations
-cache_memory = joblib.Memory('cache', verbose=True)
+cache_memory = joblib.Memory("cache", verbose=True)
+
 
 @cache_memory.cache
 def generate_random_timeseries(start_date, end_date, option):
@@ -17,4 +19,4 @@ def generate_random_timeseries(start_date, end_date, option):
     # produce the same random outputs given the same inputs
     np.random.seed(SEED_MAP[option])
     quantities = np.random.randn(len(dates))
-    return pd.DataFrame({'date': dates, 'quantity': quantities})
+    return pd.DataFrame({"date": dates, "quantity": quantities})
