@@ -1,0 +1,218 @@
+
+
+:root {
+--pink: #f79690;
+--red: #fa5655;
+--brown: #8d6b2b;
+--yellowbrown: #d0a827;
+--darkyellow: #fed507;
+--yellow: #fedb03;
+--green: #b9bc2d;
+--darkgreen: #007242;
+--blue: #252b7a;
+--purple: #955b99;
+--black: #353535;
+--gray: #9e9e9e;
+--max-width: 850px;
+}
+
+html {
+/* border-box box model allows us to add padding and border to elements without increasing their size */
+box-sizing: border-box;
+font-family: Roboto, Helvetica, Arial, sans-serif;
+font-size: 12px;
+color: var(--black);
+}
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body {
+min-height: calc(100vh - 100px);
+margin: 20px;
+/* background: white; */
+background: #f7f7f7;
+letter-spacing: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0 0 5px 0;
+}
+
+hr {
+width: 100vw;
+}
+
+/* css flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.f-row {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.f-column {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.f-label {
+    flex-grow: 0;
+}
+
+.card {
+    background-color: white;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+#app-container {
+    max-width: var(--max-width);
+}
+
+#run-button {
+    width: 100%;
+    height: 100%;
+}
+
+#figure-card {
+    justify-content: center;
+}
+
+/* css grid */
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto 1fr;
+    grid-gap: 2%;
+    background-color:  #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-0{
+    font-size: 18px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 0;
+    text-align: right;
+}
+
+.grid-item-1{
+    font-size: 18px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 0;
+}
+
+
+
+/*  */
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 20px;}
+.welcome-background {
+    /* background-color: #222222; */
+    background-image:url('network1.jpg') ;
+    background-size: contain;
+    background-position: center;
+    height: 10%;
+    width:100%;
+}
+.header {
+    background-color: #222222;
+    height: 200px;
+    padding: 16px 0 0 0;
+    opacity: 70%;
+ }
+ .header-image {
+    font-size: 12px;
+    text-align: left;
+    height:20%;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 2px;
+} 
+.header-title {
+    color: #222222;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 100%;
+    margin-top: 5px;
+}
+.navbar{
+    padding: 15px 10px;
+    background: #222222;
+    opacity: 75%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    width:100%;
+}
+.header-description {
+    color:#F7F7F7;
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 500 px; 
+}
+.client-image {
+    font-size: 12px;
+    text-align: right;
+    height: 60%;
+    width: 20%;
+    margin-top:30px;
+    margin-left: 1250px
+}
+.datamap-image {
+    font-size: 12px;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    margin-top:30px;
+    margin-left: 1250px
+}
+.textarea {
+    font-weight: lighter;
+    background-color:#222222;
+    background-size: cover;
+    width: 500px;
+    font-size: 33px;
+    color:#FFFFFF;
+    /* margin-left: 80px;  */
+    margin-top: 10px;  
+    white-space: pre-line;
+    opacity: 85%;
+    height: 800px;
+    text-align:left;
+}
+    /* background-color: transparent; */
+/*}
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+} 
+

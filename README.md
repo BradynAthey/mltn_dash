@@ -1,2 +1,2 @@
-# mltn_dash
- Creating MLTN in Dash
+# MLTN: Machine Learning TransitioN toolkit
+

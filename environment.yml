@@ -1,0 +1,13 @@
+name: mltn
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.8
+- pip
+- pytest
+- dash
+- jupyter
+- pandas
+- matplotlib
+- joblib
