@@ -1,5 +1,5 @@
 import dash_bootstrap_components as dbc 
-from dash import html
+import dash_html_components as html
 import dash_cytoscape as cyto
 
 ontology = html.Div([
